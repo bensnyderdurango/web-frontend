@@ -14,3 +14,6 @@ async function checkService(name, baseUrl) {
 for (const [name, url] of Object.entries(SERVICES)) {
   checkService(name, url);
 }
+
+document.getElementById("checked-at").textContent =
+  `Last checked: ${new Date().toLocaleTimeString()}`;
